@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Brainstorming App</title>
+  </head>
+  <body>
+    <div class="container">
+      {% include 'header.html' %}
+      <ul>
+      {% for n in [1,2,3,4,5,6,7,8,'rats'] %}
+        <li><a href='/room/{{n}}'>ROOM: {{n}}</a></li>
+      {% endfor %}
+      </ul>
+      {% include 'footer.html' %}
+    </div>
+  </body>
+</html>
