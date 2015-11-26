@@ -50,5 +50,6 @@ function pollData() {
 }
 
 $(document).ready(function() {
+	$("#mycolor").colorpicker({color:'#31859b', defaultPalette:'web'});
 	poll();
 });
