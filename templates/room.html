@@ -2,12 +2,23 @@
 <html>
   <head>
     <script type="text/javascript"> var vars = {{vars|tojson}} </script>
-    <script type="text/javascript" src="/static/scripts/jquery-1.11.3.min.js" defer></script>
+    <!-- // <script type="text/javascript" src="/static/scripts/jquery-1.11.3.min.js" defer></script> -->
+    
+    <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+    <script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js" type="text/javascript" charset="utf-8"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jqueryui/1.11.1/jquery-ui.min.js" type="text/javascript" charset="utf-8"></script>
+    <script src="/static/scripts/evol.colorpicker.min.js" type="text/javascript" charset="utf-8" defer></script>
+    <link rel="stylesheet" type="text/css" href="http://ajax.googleapis.com/ajax/libs/jqueryui/1.11.1/themes/ui-lightness/jquery-ui.css">
+    <link href="/static/css/evol.colorpicker.css" rel="stylesheet" type="text/css">
+    <script type="text/javascript" src="/static/scripts/font.js" defer></script>
     <script type="text/javascript" src="/static/scripts/room.js" defer></script>
 
     <title>ROOM: {{vars.id}}</title>
   </head>
   <body>
+    {% include 'fontTool.html' %}
     {% include 'header.html' %}
     <h2 id='label'> {{vars.text}} </h2>
     <p><input type='text' id='field' /></p>
