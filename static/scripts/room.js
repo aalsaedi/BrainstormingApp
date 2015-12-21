@@ -82,9 +82,7 @@ function updatePage(update) {
 
 $(document).ready(function() {
 	updatePage(vars);
-	poll();
-	
-	//method to trigger when user hits enter key
+		//method to trigger when user hits enter key
 	$("#shout_message").keypress(function(evt) {
 		if(evt.which == 13) {
 			var iusername = $('#shout_username').val();
@@ -99,12 +97,12 @@ $(document).ready(function() {
 			$('.message_box').scrollTop(scrolltoh);
 							
 			changed = true;
-			poll();
-			//reset value of message box
-			$('#shout_message').val('');
 		}
 	});
+	poll();
 	
+	//reset value of message box
+	$('#shout_message').val('');
 	// //toggle hide/show shout box
 	// $(".close_btn").click(function (e) {
 	// 	//get CSS display state of .toggle_chat element
