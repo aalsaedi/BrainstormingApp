@@ -46,6 +46,9 @@ def pollRoom():
 			room.version = int(sentData['version']) + 1
 			room.text = sentData['text']
 			room.canvas =  sentData['canvas']
+			room.username = sentData['username']
+			room.message = sentData['message']
+			room.date = sentData['date']
 			room.put()
 			return json.dumps({'code': 2, 'version': int(sentData['version']) + 1})
 		else:

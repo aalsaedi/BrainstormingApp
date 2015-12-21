@@ -5,6 +5,7 @@
     <script type="text/javascript" src="/static/scripts/jquery-1.11.3.min.js" defer></script>
     <script type="text/javascript" src="/static/scripts/myFabricJs.min.js" defer></script>
     <script type="text/javascript" src="/static/scripts/room.js" defer></script>
+    <link href="/static/css/chatbox.css" rel="stylesheet" type="text/css">
 
     <title>ROOM: {{vars.id}}</title>
   </head>
@@ -15,6 +16,7 @@
     <button id='update'> Update! </button> <br />
     <button id='modeDrawing'> Drawing Mode </button> <br />
     <canvas id='canvas' width='480' height='320'></canvas>
+    {% include 'chat.html' %}
     {% include 'footer.html' %}
   </body>
 </html>
